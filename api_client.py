@@ -19,8 +19,7 @@ filename = "/home/shirley_cohen/data/" + timestamp + ".csv"
 MyAppToken = "fvXvcsQ8qpzOM5yGZEwgjqu1Q"
 
 # authenticated client
-client = Socrata("data.cityofchicago.org", MyAppToken, username="shirley.cohen@gmail.com", password="K/+z2;g;a
-<6g6qk-")
+client = Socrata("data.cityofchicago.org", MyAppToken, username="replace with email", password="replace with password")
 
 # Get 5000 results, returned as JSON from API / converted to Python list of dictionaries by sodapy.
 #result_list = client.get("8v9j-bter", limit=5000)
