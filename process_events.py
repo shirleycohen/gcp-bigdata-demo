@@ -28,8 +28,7 @@ class TransformDoFn(beam.DoFn):
     ts = t.time()
     ptime = dt.datetime.fromtimestamp(ts).strftime('%Y-%m-%dT%H:%M:%S')
 
-    record = [{'seqnum': int(elements[0]), 'ptime' : ptime, 'etime' : elements[1], 'segment_id' : int(elem
-ents[2]),
+    record = [{'seqnum': int(elements[0]), 'ptime' : ptime, 'etime' : elements[1], 'segment_id' : int(elements[2]),
                'speed' : int(elements[3]), 'street' : elements[4], 'from_street' : elements[5],
                'to_street' : elements[6], 'street_heading' : elements[7], 'direction' : elements[8],
                'length' : float(elements[9]), 'start_latitude' : float(elements[10]),
